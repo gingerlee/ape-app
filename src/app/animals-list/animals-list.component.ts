@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../animal';
 
 @Component({
@@ -7,20 +7,14 @@ import { Animal } from '../animal';
   styleUrls: ['./animals-list.component.scss']
 })
 export class AnimalsListComponent implements OnInit {
-  animal: Animal = {
-    species: 'Artic Fox',
-    name: 'Sir Fox-a-lot',
-    age: 3,
-    diet: 'field mice',
-    location: 'Zoo Snow Fields',
-    caretakers: 3,
-    sex: 'Male',
-    like: 'Pouncing',
-    dislike: 'Heat'
-  };
-
+  @Input() childAnimalList: Animal[];
+  @Output() clickSender = new EventEmitter();
 
   constructor() { }
+
+  selectAnimalButtonClicked(animal: Animal) {
+    this.clickSender.emit(animal);
+  }
 
   ngOnInit() {
   }

@@ -9,7 +9,13 @@ import { Animal } from './animal';
 
 export class AppComponent {
   title = 'Angular Ape App';
-  // masterAnimalList = Animal[] = [
-  //   new Animal()
-  // ]
+  masterAnimalList: Animal[] = [
+    new Animal('Artic Fox', 'Sir Fox-a-lot', 3, 'field mice', 'Zoo Snow Fields', 3, 'Male', 'Pouncing', 'Heat'),
+    new Animal('Hawaiian Monk Seal', 'Sealy', 10, 'Kelp', 'Zoo Ocean', 1, 'Female', 'Surfing', 'Sharks')
+  ];
+  selectedAnimal = null;
+
+  selectAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+  }
 }

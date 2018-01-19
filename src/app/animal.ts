@@ -1,11 +1,3 @@
 export class Animal {
-  species: string;
-  name: string;
-  age: number;
-  diet: string;
-  location: string;
-  caretakers: number;
-  sex: string;
-  like: string;
-  dislike: string;
+  constructor(public species: string, public name: string, public age: number, public diet: string, public location: string, public caretakers: number, public sex: string, public like: string, public dislike: string) { }
 }
