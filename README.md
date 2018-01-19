@@ -28,6 +28,8 @@
 | Filter views by showing all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older). | Uses custom pipe filter |
 | Click an animal to edit its name, age or caretakers. | Uses ngModel in form to create a two-way data-binding |
 
+##Future Additions
+With more time, I would like to extend the functionality of this app to include more custom styling, more functions that allow the zoo keepers to log information about specific animals, like when and what they ate, when they sleep and for how long, and an activity log for the day. This would help monitor all animals daily activities to help the caretakers know what the animals needs are in real time.
 
 ## Technologies Used
 * JavaScript (ES6)
