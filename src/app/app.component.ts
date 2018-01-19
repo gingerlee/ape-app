@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'app works!';
+  title = 'Angular Ape App';
+  // masterAnimalList = Animal[] = [
+  //   new Animal()
+  // ]
 }
