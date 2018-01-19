@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animals.component.scss']
 })
 export class AnimalsComponent implements OnInit {
-
+  animal = 'Artic Fox';
   constructor() { }
 
   ngOnInit() {
