@@ -1,3 +1,23 @@
-<p>
-  animals-edit works!
-</p>
+<div *ngIf="childSelectedAnimal">
+  <h2>Edit Animal:</h2>
+  <p>{{species}} {{name}} {{age}} {{diet}} {{location}} {{caretakers}} {{sex}} {{like}} {{dislike}}</p>
+    <label>Species Name</label>
+    <input [(ngModel)]="childSelectedAnimal.species" type="text" name="animalInput1">
+    <label>Name</label>
+    <input [(ngModel)]="childSelectedAnimal.name" type="text" name="animalInput2">
+    <label>Age</label>
+    <input [(ngModel)]="childSelectedAnimal.age" type="text" name="animalInput3">
+    <label>Diet</label>
+    <input [(ngModel)]="childSelectedAnimal.diet" type="text" name="kegInput4">
+    <label>Location</label>
+    <input [(ngModel)]="childSelectedAnimal.location" type="text" name="kegInput5">
+    <label>Caretakers</label>
+    <input [(ngModel)]="childSelectedAnimal.caretakers" type="text" name="kegInput6">
+    <label>Sex</label>
+    <input [(ngModel)]="childSelectedAnimal.sex" type="text" name="kegInput7">
+    <label>Like</label>
+    <input [(ngModel)]="childSelectedAnimal.like" type="text" name="kegInput8">
+    <label>Dislike</label>
+    <input [(ngModel)]="childSelectedAnimal.dislike" type="text" name="kegInput9">
+    <button (click)="doneEditing()">Done</button>
+</div>

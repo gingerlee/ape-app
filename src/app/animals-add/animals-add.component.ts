@@ -4,7 +4,7 @@ import { Animal } from '../animal';
 @Component({
   selector: 'app-animals-add',
   templateUrl: './animals-add.component.html',
-  styleUrls: ['./animals-add.component.css']
+  styleUrls: ['./animals-add.component.scss']
 })
 export class AnimalsAddComponent implements OnInit {
   @Input() AnimalConstructorFromParent: Animal;
