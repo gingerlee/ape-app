@@ -1,4 +1,4 @@
-export class Animals {
+export class Animal {
   species: string;
   name: string;
   age: number;
@@ -6,6 +6,6 @@ export class Animals {
   location: string;
   caretakers: number;
   sex: string;
-  likes: string;
-  dislikes: string;
+  like: string;
+  dislike: string;
 }
