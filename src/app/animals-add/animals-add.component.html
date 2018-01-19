@@ -1,3 +1,22 @@
-<p>
-  animals-add works!
-</p>
+<div>
+  <h2>Amial Add:</h2>
+    <label>Species Name</label>
+    <input #species type="text" name="animalInput1">
+    <label>Name</label>
+    <input #name type="text" name="animalInput2">
+    <label>Age</label>
+    <input #age type="text" name="animalInput3">
+    <label>Diet</label>
+    <input #diet type="text" name="kegInput4">
+    <label>Location</label>
+    <input #location type="text" name="kegInput5">
+    <label>Caretakers</label>
+    <input #caretakers type="text" name="kegInput6">
+    <label>Sex</label>
+    <input #sex type="text" name="kegInput7">
+    <label>Like</label>
+    <input #like type="text" name="kegInput8">
+    <label>Dislike</label>
+    <input #dislike type="text" name="kegInput9">
+    <button type="submit" (click)="addAnimal(species.value, name.value, age.value, diet.value, location.value, caretakers.value, sex.value, like.value, dislike.value)">Add Animal!</button>
+</div>
