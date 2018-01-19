@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Animal } from '../animal';
 
 @Component({
-  selector: 'app-animals',
-  templateUrl: './animals.component.html',
-  styleUrls: ['./animals.component.scss']
+  selector: 'app-animals-list',
+  templateUrl: './animals-list.component.html',
+  styleUrls: ['./animals-list.component.scss']
 })
-export class AnimalsComponent implements OnInit {
+export class AnimalsListComponent implements OnInit {
   animal: Animal = {
     species: 'Artic Fox',
     name: 'Sir Fox-a-lot',
