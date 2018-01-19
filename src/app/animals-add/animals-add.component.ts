@@ -7,8 +7,15 @@ import { Animal } from '../animal';
   styleUrls: ['./animals-add.component.css']
 })
 export class AnimalsAddComponent implements OnInit {
+  @Input() AnimalConstructorFromParent: Animal;
+  @Output() newAnimalAdder = new EventEmitter();
 
   constructor() { }
+
+  addAnimal(species: string, name: string, age: number, diet: string, location: string, caretakers: number, sex: string, like: string, dislike: string) {
+    var newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretakers, sex, like, dislike);
+    this.newAnimalAdder.emit(newAnimalToAdd);
+  }
 
   ngOnInit() {
   }
