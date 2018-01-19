@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AnimalsListComponent } from './animals-list/animals-list.component';
 import { AnimalsAddComponent } from './animals-add/animals-add.component';
 import { AnimalsEditComponent } from './animals-edit/animals-edit.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalsListComponent,
     AnimalsAddComponent,
-    AnimalsEditComponent
+    AnimalsEditComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

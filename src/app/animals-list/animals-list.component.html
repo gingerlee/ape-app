@@ -2,11 +2,11 @@
 <select class="filter">
   <label>Filter Animals by Age</label>
   <option value="all">All</option>
-  <option value="young">Young<</option>
-  <option value="mature">Mature<</option>
+  <option value="young">Young (Under 2 years old)</option>
+  <option value="mature">Mature (2 and over)</option>
 </select>
 <button type="button" name="button">Filter!</button>
-<ul *ngFor="let animal of childAnimalList | age:filterProperty">
+<ul *ngFor="let animal of childAnimalList | filter:age">
   <h2>{{ animal.species | uppercase }}</h2>
   <div><span>Name: </span>{{animal.name | uppercase }}</div>
   <div><span>Age: </span>{{animal.age}}</div>
