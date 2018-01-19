@@ -18,4 +18,9 @@ export class AppComponent {
   selectAnimal(clickedAnimal) {
     this.selectedAnimal = clickedAnimal;
   }
+
+  addAnimal(newAnimalFromChild: Animal){
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
+
 }
