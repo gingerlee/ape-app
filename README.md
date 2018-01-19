@@ -1,17 +1,43 @@
-# ApeApp
+# Angular Ape App
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+#### Angular 2 & MVCs -- JavaScript, January 19, 2018
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### _By Ginger Lee Kretschmer_
 
-## Code scaffolding
+##  Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+**Angular 2 in Action:** An angular 2 application to track animals at the local Zoo.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+1. _`$ git clone`  [https://github.com/gingerlee/ape-app.git](https://github.com/gingerlee/ape-app.git)_
+
+2. _`$ cd ape-app`_
+
+3.  _`$ npm install -g angular-cli`_
+
+4. _`$ ng serve --open`_
+
+
+## User Stories
+
+| User Interface   |      Application Notes      |  
+|----------|:-------------:|
+| Ability to add a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike. |  Creates New Animal Object |
+| View a list of animals user has logged. | Displays dynamic list |
+| Filter views by showing all animals, only young animals (less than 2 years of age), or only mature animals (2 years of age and older). | Uses custom pipe filter |
+| Click an animal to edit its name, age or caretakers. | Uses ngModel in form to create a two-way data-binding |
+
+
+## Technologies Used
+* JavaScript (ES6)
+* Angular 2
+* Node
+* HTML
+* CSS
+* SASS
+
+
 
 ## Deploying to GitHub Pages
 
