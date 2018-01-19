@@ -1,4 +1,4 @@
-import { Component, OnChange, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../animal';
 import { FilterPipe } from '../filter.pipe';
 
@@ -9,7 +9,7 @@ import { FilterPipe } from '../filter.pipe';
 })
 
 export class AnimalsListComponent implements OnInit {
-
+  filterByAge: string = "all";
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
 
@@ -19,8 +19,11 @@ export class AnimalsListComponent implements OnInit {
     this.clickSender.emit(animalToEdit);
   }
 
+  ngOnInit() {
+  }
+
   onChange(optionFromMenu) {
-  this.filterByAge = optionFromMenu;
-}
+    this.filterByAge = optionFromMenu;
+  }
 
 }
