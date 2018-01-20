@@ -1,13 +1,15 @@
-<h2>Animals List</h2>
-<select (change)="onChange($event.target.value)">
-  <label>Filter Animals by Age</label>
-  <option value="all" selected="selected">All</option>
-  <option value="young">Young (2 and under)</option>
-  <option value="mature">Mature (2 and over)</option>
-</select>
-<button type="button" name="button">Filter!</button>
+<h4>Animals List</h4>
+<div class="filter">
+  <select (change)="onChange($event.target.value)">
+    <label>Filter Animals by Age</label>
+    <option value="all" selected="selected">All Ages</option>
+    <option value="young">Young (2 and under)</option>
+    <option value="mature">Mature (2 and over)</option>
+  </select>
+  <button class="btn purple" type="button" name="button">Filter!</button>
+</div>
 <ul *ngFor="let animal of childAnimalList | age:filterByAge">
-  <h2>{{ animal.species | uppercase }}</h2>
+  <h5>{{ animal.species | uppercase }}</h5>
   <div><span>Name: </span>{{animal.name | uppercase }}</div>
   <div><span>Age: </span>{{animal.age}}</div>
   <div><span>Diet: </span>{{animal.diet}}</div>
@@ -16,5 +18,6 @@
   <div><span>Sex: </span>{{animal.sex}}</div>
   <div><span>Like: </span>{{animal.like}}</div>
   <div><span>Disike: </span>{{animal.dislike}}</div>
-  <button type="button" (click)="editAnimalButtonClicked(animal)">Edit</button>
+  <button class="btn" type="button" (click)="editAnimalButtonClicked(animal)">Edit</button>
+  <!-- <button type="button" class="btn" (click)="removeAnimalButtonClicked(animal)">Remove</button> -->
 </ul>
